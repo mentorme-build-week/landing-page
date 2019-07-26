@@ -1,9 +1,10 @@
 /* ----- OUR CODE BELOW ----- */
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
+/* 
 .header-elements {
 
 }
@@ -22,13 +23,12 @@ nav a {
 
 .top-content {
 
-}
+} */
 
 .mid-content {
     display: flex;
-    border: 1px solid red;
 }
-
+/* 
 .middle-copy {
 
 }
@@ -43,4 +43,4 @@ nav a {
 
 footer {
 
-}
+} */
