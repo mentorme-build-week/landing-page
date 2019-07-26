@@ -19,7 +19,8 @@ nav a {
 }
 
 .mid-content {
-
+    display: flex;
+    border: 1px solid red;
 }
 
 .middle-copy {
@@ -35,5 +36,5 @@ nav a {
 }
 
 footer {
-    
+
 }
