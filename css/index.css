@@ -212,7 +212,9 @@ footer {
 .navigation a {
   margin-right: 30px;
   text-decoration: none;
+  color: white;
 }
 .navigation a:hover {
   cursor: pointer;
+  color: #ef3e36;
 }
