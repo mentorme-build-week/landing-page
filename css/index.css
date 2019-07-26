@@ -157,6 +157,15 @@ html {
   align-items: center;
   text-align: center;
 }
+body {
+  background-color: #050a27;
+  color: white;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 .mid-content {
   display: flex;
 }
@@ -168,20 +177,27 @@ html {
   display: flex;
   flex-direction: column;
   width: 30%;
-  background-color: #b96e7b;
-}
-.middle-copy h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
 }
 .middle-img {
   width: 50%;
 }
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-content button {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10%;
+}
 footer {
   display: flex;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
   font-size: 0.85rem;
-  border: 1px solid red;
   margin: 0 auto;
 }
