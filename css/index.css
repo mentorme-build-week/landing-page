@@ -157,6 +157,10 @@ html {
   align-items: center;
   text-align: center;
 }
+body {
+  background-color: #050a27;
+  color: white;
+}
 h2 {
   font-size: 1.2rem;
   font-weight: bold;
