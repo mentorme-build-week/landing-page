@@ -170,13 +170,15 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 30%;
-  background-color: #b96e7b;
 }
 .top-content h2 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: white;
+}
+.top-content p {
+  color: white;
 }
 .top-img {
   width: 25%;
@@ -209,10 +211,13 @@ footer {
   border: 1px solid red;
   margin: 0 auto;
 }
+.navigation {
+  margin-top: 25px;
+}
 .navigation a {
-  margin-right: 30px;
-  text-decoration: none;
   color: white;
+  margin-right: 35px;
+  text-decoration: none;
 }
 .navigation a:hover {
   cursor: pointer;
