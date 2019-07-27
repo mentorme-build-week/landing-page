@@ -5,11 +5,15 @@ html {
 	.roboto();
 	font-size: 1rem;
 	min-height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .site-container {
 	width: 80%;
 	.centered();
+	min-height: 100%;
+	position: relative;
 }
 
 body {
@@ -22,6 +26,19 @@ h2 {
 	font-size: 1.2rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
+	// background-color: #0d3b66;
+	background-color: #5AB9EA;
+	color: white;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	.montserrat();
 }
 
 //styles for the top of the page
@@ -47,15 +64,17 @@ h2 {
 }
 
 .top-img {
-	width: 25%;
+	width: 40%;
 }
 
 //styles for the middle of the page
 
-//styles for the bottom of the page
 
 .mid-content {
+	margin-top: 2rem;
 	.flex();
+	width: 100%;
+	margin-bottom: 2rem;
 }
 
 .middle-copy {
@@ -75,6 +94,7 @@ h2 {
 	.flex();
 	flex-direction: column;
 	width: 30%;
+	line-height: 2.0rem;
 }
 
 .middle-img {
@@ -88,13 +108,39 @@ h2 {
 	button {
 		.centered();
 		width: 10%;
+
+//styles for the bottom of the page
+
+.bottom-content {
+	.flex();
+	flex-direction: column;
+
+	button {
+		.centered();
+		width: 15%;
+		height: 2.7rem;
+		margin-top: 2rem;
+		border: .15rem solid white;
+		border-radius: .5rem;
+		.montserrat();
+		background-color: #5AB9EA;
+		color: white;
+		font-size: .9rem;
+	}
+	button:hover {
+		background-color: rgba(23, 190, 187, 0.856);
+		color: white;
+		.grow();
 	}
 }
 
 footer {
 	.flex();
-	position: absolute;
+	.centered();
 	font-size: .85rem;
 	border: 1px solid red;
 	margin: 0 auto;
+	height: 2.5rem;
+	margin-top: 2rem;
+	width: 100%;
 }
