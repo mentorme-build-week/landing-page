@@ -145,6 +145,11 @@ table {
   display: flex;
   flex-direction: row;
 }
+.grow {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
@@ -163,17 +168,17 @@ html {
   position: relative;
 }
 body {
-  background-color: #0d3b66;
-  background-color: #050a27;
+  background-color: #5AB9EA;
   color: white;
   min-height: 100%;
   margin: 0;
   padding: 0;
 }
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 .top-section {
   display: flex;
@@ -198,14 +203,16 @@ h2 {
   color: white;
 }
 .top-img {
-  width: 25%;
+  width: 40%;
 }
 .mid-content {
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 .middle-copy {
-  background-color: #b96e7b;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -214,11 +221,7 @@ h2 {
   flex-direction: row;
   flex-direction: column;
   width: 30%;
-}
-.middle-copy h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  line-height: 2rem;
 }
 .middle-img {
   width: 50%;
@@ -233,19 +236,34 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 10%;
+  width: 15%;
+  height: 2.7rem;
+  margin-top: 2rem;
+  border: 0.15rem solid white;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #5AB9EA;
+  color: white;
+  font-size: 0.9rem;
+}
+.bottom-content button:hover {
+  background-color: rgba(23, 190, 187, 0.856);
+  color: white;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
 }
 footer {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 0.85rem;
-  margin: 0 auto;
+  height: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
-  left: 0;
-  bottom: 0;
 }
 .navigation {
   margin-top: 25px;
@@ -258,4 +276,7 @@ footer {
 .navigation a:hover {
   cursor: pointer;
   color: #ef3e36;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
 }
