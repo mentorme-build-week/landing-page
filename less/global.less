@@ -17,6 +17,15 @@ html {
 }
 
 body {
+	background-color: #0d3b66;
+	background-color: #050a27;
+	color: white;
+}
+
+h2 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
 	// background-color: #0d3b66;
 	background-color: #5AB9EA;
 	color: white;
@@ -73,6 +82,18 @@ h2 {
 	.flex();
 	flex-direction: column;
 	width: 30%;
+	background-color: rgb(185, 110, 123);
+
+	h2 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	.centered();
+	.flex();
+	flex-direction: column;
+	width: 30%;
 	line-height: 2.0rem;
 }
 
@@ -80,6 +101,13 @@ h2 {
 	width: 50%;
 }
 
+.bottom-content {
+	.flex();
+	flex-direction: column;
+
+	button {
+		.centered();
+		width: 10%;
 
 //styles for the bottom of the page
 
@@ -110,6 +138,8 @@ footer {
 	.flex();
 	.centered();
 	font-size: .85rem;
+	border: 1px solid red;
+	margin: 0 auto;
 	height: 2.5rem;
 	margin-top: 2rem;
 	width: 100%;
