@@ -1,18 +1,19 @@
 //Overall styles for the whole page
 
 html {
-    font-size: 62.5%;
-    .roboto();
-    font-size: 1rem;
-    min-height: 100%;
+	font-size: 62.5%;
+	.roboto();
+	font-size: 1rem;
+	min-height: 100%;
 }
 
 .site-container {
-    width: 80%;
-    .centered();
+	width: 80%;
+	.centered();
 }
 
 body {
+	background-color: #0d3b66;
     background-color: #050a27;
     color: white;
 }
@@ -24,23 +25,52 @@ h2 {
 }
 
 //styles for the top of the page
+.top-section {
+	.flex();
+}
 
+.top-content {
+	.centered();
+	.flex();
+	flex-direction: column;
 
+	h2 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+		color: white;
+	}
 
+	p {
+		color: white;
+	}
+}
+
+.top-img {
+	width: 25%;
+}
 
 //styles for the middle of the page
 
-
-
-
 //styles for the bottom of the page
 
-
 .mid-content {
-    .flex();
+	.flex();
 }
 
 .middle-copy {
+	.centered();
+	.flex();
+	flex-direction: column;
+	width: 30%;
+	background-color: rgb(185, 110, 123);
+
+	h2 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+=======
     .centered();
     .flex();
     flex-direction: column;
@@ -48,8 +78,7 @@ h2 {
 }
 
 .middle-img {
-    width: 50%;
-
+	width: 50%;
 }
 
 .bottom-content{
@@ -63,6 +92,12 @@ h2 {
 }
 
 footer {
+	.flex();
+	position: absolute;
+	font-size: .85rem;
+	border: 1px solid red;
+	margin: 0 auto;
+}
     .flex();
     .centered();
     flex-shrink: 0;
