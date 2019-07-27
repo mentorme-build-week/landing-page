@@ -178,6 +178,7 @@ h2 {
   font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 .top-section {
   display: flex;
@@ -237,6 +238,7 @@ h2 {
   text-align: center;
   width: 15%;
   height: 2.7rem;
+  margin-top: 2rem;
   border: 0.15rem solid white;
   border-radius: 0.5rem;
   font-family: 'Montserrat', sans-serif;
