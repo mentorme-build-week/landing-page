@@ -90,6 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -104,17 +105,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -122,34 +127,42 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 .centered {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .invisible {
   display: none;
 }
+
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
+
 .montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+
 .flex {
   display: flex;
 }
+
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   min-height: 100%;
 }
+
 .site-container {
   width: 80%;
   margin: 0 auto;
@@ -157,12 +170,15 @@ html {
   align-items: center;
   text-align: center;
 }
+
 body {
   background-color: #0d3b66;
 }
+
 .top-section {
   display: flex;
 }
+
 .top-content {
   margin: 0 auto;
   justify-content: center;
@@ -171,18 +187,30 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .top-content h2 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
 }
+
 .top-content p {
   color: white;
 }
+
 .top-img {
   width: 25%;
+  background-color: #050a27;
+  color: white;
 }
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .mid-content {
   display: flex;
 }
@@ -194,21 +222,28 @@ body {
   display: flex;
   flex-direction: column;
   width: 30%;
-  background-color: #b96e7b;
-}
-.middle-copy h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
 }
 .middle-img {
   width: 50%;
 }
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-content button {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10%;
+}
 footer {
   display: flex;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
   font-size: 0.85rem;
-  border: 1px solid red;
   margin: 0 auto;
 }
 .navigation {
