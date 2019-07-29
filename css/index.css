@@ -171,22 +171,52 @@ body {
   background-color: #5ab9ea;
   color: white;
 }
-h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: white;
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
 }
 h2 {
   font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: white;
   font-family: 'Montserrat', sans-serif;
+}
+.logo-img {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+}
+.header-elements {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  width: 80%;
+}
+.branding-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .top-section {
   display: flex;
   flex-direction: row;
-  margin: 30px 0px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  width: 80%;
 }
 .top-content {
   margin: 0 auto;
@@ -196,16 +226,23 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-direction: column;
+  width: 30%;
+  line-height: 2rem;
 }
 .top-img {
-  width: 25%;
+  width: 35%;
 }
 .mid-content {
-  margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  margin-bottom: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
 }
 .middle-copy {
   margin: 0 auto;
@@ -219,7 +256,9 @@ h2 {
   line-height: 2rem;
 }
 .middle-img {
-  width: 50%;
+  display: flex;
+  flex-direction: row;
+  width: 35%;
 }
 .bottom-content {
   display: flex;
@@ -227,6 +266,8 @@ h2 {
   flex-direction: column;
 }
 .bottom-content button {
+  display: flex;
+  flex-direction: row;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -268,24 +309,45 @@ footer {
   align-items: center;
   text-align: center;
   font-size: 0.85rem;
-  border: 1px solid red;
   margin: 0 auto;
-  height: 2.5rem;
   margin-top: 2rem;
   width: 100%;
 }
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.icon-attribution {
+  font-size: 0.6rem;
+}
+li:last-child {
+  margin-bottom: 0.5rem;
+}
 .navigation {
+  display: flex;
+  flex-direction: row;
   margin-top: 25px;
-  border: 1px solid red;
+  height: 3rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .navigation a {
-  color: white;
   margin-right: 35px;
   text-decoration: none;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 .navigation a:hover {
   cursor: pointer;
-  background-color: #8860d0;
   transform: scale(1.1);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
