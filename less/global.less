@@ -21,82 +21,91 @@ body {
 	color: white;
 }
 
-h2 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	margin-bottom: 1rem;
-	color: white;
-
+h1 {
+	.montserrat();
+	font-size: 2rem;
 }
 
 h2 {
 	font-size: 1.7rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
+	color: white;
 	.montserrat();
+}
+
+.logo-img {
+	.flex();
+	height: 5rem;
+}
+
+.header-elements {
+	.flex();
+	flex-direction: column;
+	.centered();
+	margin-top: 2rem;
+	width: 80%;
+}
+
+.branding-container {
+	.flex();
+	.centered();
+	margin-bottom: 2rem;
 }
 
 //styles for the top of the page
 .top-section {
 	.flex();
-	margin: 30px 0px;
-	@media @tablet {
-	}
+	.centered();
+	margin-top: 8rem;
+	margin-bottom: 4rem;
+	// margin: 30px 0px;
 
-	@media @mobile {
-	}
+	width: 80%;
+
+	// border: 1px solid white; Border added to debug design.
+	@media @tablet {}
+
+	@media @mobile {}
 }
 
 .top-content {
 	.centered();
 	.flex();
 	flex-direction: column;
+	width: 30%;
+	line-height: 2.0rem;
 
-	// h2 {
-	// 	font-size: 1.2rem;
-	// 	font-weight: bold;
-	// 	margin-bottom: 1rem;
-	// 	color: white;
-	// }
+	@media @tablet {}
 
-	// p {
-	// 	color: white;
-	// }
-	@media @tablet {
-	}
-
-	@media @mobile {
-	}
+	@media @mobile {}
 }
 
 .top-img {
-	width: 25%;
-	@media @tablet {
-	}
+	width: 35%;
 
-	@media @mobile {
-	}
+	@media @tablet {}
+
+	@media @mobile {}
 }
 
 //styles for the middle of the page
 
 .mid-content {
-	margin-top: 2rem;
 	.flex();
-	width: 100%;
-	margin-bottom: 2rem;
-	@media @tablet {
-	}
+	.centered();
+	width: 80%;
+	margin-top: 8rem;
+	margin-bottom: 4rem;
+	margin-top: 1rem;
 
-	@media @mobile {
-	}
+	// border: 1px solid red; Border added to debug design.
+	@media @tablet {}
+
+	@media @mobile {}
 }
 
 .middle-copy {
-	.centered();
-	.flex();
-	flex-direction: column;
-	width: 30%;
 
 	.centered();
 	.flex();
@@ -104,20 +113,18 @@ h2 {
 	width: 30%;
 	line-height: 2.0rem;
 
-	@media @tablet {
-	}
+	@media @tablet {}
 
-	@media @mobile {
-	}
+	@media @mobile {}
 }
 
 .middle-img {
-	width: 50%;
-	@media @tablet {
-	}
+	.flex();
+	width: 35%;
 
-	@media @mobile {
-	}
+	@media @tablet {}
+
+	@media @mobile {}
 }
 
 .bottom-content {
@@ -125,15 +132,16 @@ h2 {
 	flex-direction: column;
 
 	button {
+		.flex();
 		.centered();
 		width: 10%;
 	}
-	@media @tablet {
-	}
 
-	@media @mobile {
-	}
+	@media @tablet {}
+
+	@media @mobile {}
 }
+
 //styles for the bottom of the page
 
 .bottom-content {
@@ -153,31 +161,41 @@ h2 {
 		color: white;
 		font-size: .9rem;
 	}
+
 	button:hover {
 		background-color: rgba(23, 190, 187, 0.856);
 		color: white;
 		.grow();
 	}
-	@media @tablet {
-	}
 
-	@media @mobile {
-	}
+	@media @tablet {}
+
+	@media @mobile {}
 }
 
 footer {
 	.flex();
 	.centered();
 	font-size: .85rem;
-	border: 1px solid red;
 	margin: 0 auto;
-	height: 2.5rem;
 	margin-top: 2rem;
 	width: 100%;
 
-	@media @tablet {
-	}
+	@media @tablet {}
 
-	@media @mobile {
-	}
+	@media @mobile {}
+}
+
+.footer-container {
+	.flex();
+	.centered();
+}
+
+.icon-attribution {
+	font-size: .6rem;
+	// margin-bottom: 1rem;
+}
+
+li:last-child{
+	margin-bottom: .5rem;
 }
