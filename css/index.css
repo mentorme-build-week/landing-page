@@ -168,11 +168,14 @@ html {
   position: relative;
 }
 body {
-  background-color: #5AB9EA;
+  background-color: #5ab9ea;
   color: white;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
 }
 h2 {
   font-size: 1.7rem;
@@ -183,6 +186,7 @@ h2 {
 .top-section {
   display: flex;
   flex-direction: row;
+  margin: 30px 0px;
 }
 .top-content {
   margin: 0 auto;
@@ -193,17 +197,8 @@ h2 {
   flex-direction: row;
   flex-direction: column;
 }
-.top-content h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: white;
-}
-.top-content p {
-  color: white;
-}
 .top-img {
-  width: 40%;
+  width: 25%;
 }
 .mid-content {
   margin-top: 2rem;
@@ -213,6 +208,7 @@ h2 {
   margin-bottom: 2rem;
 }
 .middle-copy {
+  background-color: #b96e7b;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -222,6 +218,11 @@ h2 {
   flex-direction: column;
   width: 30%;
   line-height: 2rem;
+}
+.middle-copy h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 .middle-img {
   width: 50%;
@@ -237,13 +238,25 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 10%;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+}
+.bottom-content button {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 15%;
   height: 2.7rem;
   margin-top: 3rem;
   border: 0.15rem solid white;
   border-radius: 0.5rem;
   font-family: 'Montserrat', sans-serif;
-  background-color: #5AB9EA;
+  background-color: #5ab9ea;
   color: white;
   font-size: 0.9rem;
 }
@@ -257,11 +270,12 @@ h2 {
 footer {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 0.85rem;
+  border: 1px solid red;
+  margin: 0 auto;
   height: 2.5rem;
   margin-top: 2rem;
   width: 100%;
@@ -276,8 +290,8 @@ footer {
 }
 .navigation a:hover {
   cursor: pointer;
-  color: #ef3e36;
-  transform: scale(1.2);
+  color: #8860d0;
+  transform: scale(1.1);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
