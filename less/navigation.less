@@ -3,18 +3,40 @@
 	margin-top: 25px;
 	height: 3rem;
 	.centered();
+
+	@media @tablet {
+		width: 100%;
+	}
+
+	@media @mobile {
+		max-width: 100%;
+	}
 }
 
 .navigation a {
 	color: white;
 	margin-right: 35px;
 	text-decoration: none;
+	padding: 1rem;
 	height: 3rem;
+	.centered();
 
-	font-size: 1.5rem;
+	font-size: 1.4vw;
 	margin-bottom: 1rem;
 	color: white;
 	.montserrat();
+
+	@media @tablet {
+		width: 100%;
+		font-size: 2vw;
+		flex-direction: column;
+	}
+
+	@media @mobile {
+		max-width: 100%;
+		font-size: 2vw;
+		flex-direction: column;
+	}
 }
 
 .navigation a:hover {

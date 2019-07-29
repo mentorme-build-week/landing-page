@@ -153,7 +153,7 @@ table {
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 1vw;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -167,16 +167,41 @@ html {
   min-height: 100%;
   position: relative;
 }
+@media (max-width: 800px) {
+  .site-container {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .site-container {
+    width: 100%;
+  }
+}
 body {
   background-color: #5ab9ea;
   color: white;
 }
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 3vw;
+  margin-left: 1rem;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 4vw;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4vw;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.6vw;
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
@@ -185,7 +210,9 @@ h2 {
 .logo-img {
   display: flex;
   flex-direction: row;
-  height: 5rem;
+  height: 6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 .header-elements {
   display: flex;
@@ -196,7 +223,19 @@ h2 {
   align-items: center;
   text-align: center;
   margin-top: 2rem;
-  width: 80%;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .header-elements {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .header-elements {
+    max-width: 100%;
+    flex-direction: column;
+  }
 }
 .branding-container {
   display: flex;
@@ -207,6 +246,18 @@ h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
+@media (max-width: 800px) {
+  .branding-container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .branding-container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
 .top-section {
   display: flex;
   flex-direction: row;
@@ -214,9 +265,23 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   width: 80%;
+}
+@media (max-width: 800px) {
+  .top-section {
+    width: 100%;
+    font-size: 2.5vw;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .top-section {
+    max-width: 100%;
+    font-size: 2.5vw;
+    flex-direction: column;
+  }
 }
 .top-content {
   margin: 0 auto;
@@ -229,8 +294,32 @@ h2 {
   width: 30%;
   line-height: 2rem;
 }
+@media (max-width: 800px) {
+  .top-content {
+    max-width: 100%;
+    font-size: 2.5vw;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .top-content {
+    max-width: 100%;
+    font-size: 2.5vw;
+    flex-direction: column;
+  }
+}
 .top-img {
   width: 35%;
+}
+@media (max-width: 800px) {
+  .top-img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .top-img {
+    max-width: 100%;
+  }
 }
 .mid-content {
   display: flex;
@@ -308,6 +397,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: absolute;
   font-size: 0.85rem;
   margin: 0 auto;
   margin-top: 2rem;
@@ -337,14 +427,43 @@ li:last-child {
   align-items: center;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .navigation {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
+    max-width: 100%;
+  }
+}
 .navigation a {
   margin-right: 35px;
   text-decoration: none;
+  padding: 1rem;
   height: 3rem;
-  font-size: 1.5rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.4vw;
   margin-bottom: 1rem;
   color: white;
   font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 800px) {
+  .navigation a {
+    width: 100%;
+    font-size: 2vw;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .navigation a {
+    max-width: 100%;
+    font-size: 2vw;
+    flex-direction: column;
+  }
 }
 .navigation a:hover {
   cursor: pointer;
