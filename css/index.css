@@ -146,7 +146,7 @@ table {
   flex-direction: row;
 }
 .grow {
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
@@ -230,6 +230,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-direction: column;
+  margin: 6rem;
 }
 .bottom-content button {
   margin: 0 auto;
@@ -238,7 +239,7 @@ h2 {
   text-align: center;
   width: 15%;
   height: 2.7rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border: 0.15rem solid white;
   border-radius: 0.5rem;
   font-family: 'Montserrat', sans-serif;
@@ -249,7 +250,7 @@ h2 {
 .bottom-content button:hover {
   background-color: rgba(23, 190, 187, 0.856);
   color: white;
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
@@ -276,7 +277,7 @@ footer {
 .navigation a:hover {
   cursor: pointer;
   color: #ef3e36;
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
