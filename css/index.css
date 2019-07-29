@@ -146,7 +146,7 @@ table {
   flex-direction: row;
 }
 .grow {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
@@ -172,7 +172,7 @@ body {
   color: white;
 }
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
@@ -208,7 +208,6 @@ h2 {
   margin-bottom: 2rem;
 }
 .middle-copy {
-  background-color: #b96e7b;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -219,11 +218,6 @@ h2 {
   width: 30%;
   line-height: 2rem;
 }
-.middle-copy h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
 .middle-img {
   width: 50%;
 }
@@ -231,7 +225,6 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-direction: column;
-  margin: 6rem;
 }
 .bottom-content button {
   margin: 0 auto;
@@ -244,6 +237,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-direction: column;
+  margin: 6rem;
 }
 .bottom-content button {
   margin: 0 auto;
@@ -263,7 +257,7 @@ h2 {
 .bottom-content button:hover {
   background-color: rgba(23, 190, 187, 0.856);
   color: white;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
@@ -282,6 +276,7 @@ footer {
 }
 .navigation {
   margin-top: 25px;
+  border: 1px solid red;
 }
 .navigation a {
   color: white;
@@ -290,7 +285,7 @@ footer {
 }
 .navigation a:hover {
   cursor: pointer;
-  color: #8860d0;
+  background-color: #8860d0;
   transform: scale(1.1);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
