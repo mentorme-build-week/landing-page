@@ -6,16 +6,24 @@
 
 	@media @tablet {
 		width: 100%;
+		flex-direction: column;
+		margin-top: 6rem;
+		margin-bottom: 6rem;
 	}
 
 	@media @mobile {
 		max-width: 100%;
+		flex-direction: column;
+		margin-top: 6rem;
+		margin-bottom: 6rem;
 	}
 }
 
+
+
 .navigation a {
 	color: white;
-	margin-right: 35px;
+	// margin-right: 35px;
 	text-decoration: none;
 	padding: 1rem;
 	height: 3rem;
@@ -27,15 +35,14 @@
 	.montserrat();
 
 	@media @tablet {
-		width: 100%;
-		font-size: 2vw;
-		flex-direction: column;
+		width: 40%;
+		font-size: 2.5vw;
+		border-bottom: .2rem dotted white;
 	}
 
 	@media @mobile {
-		max-width: 100%;
-		font-size: 2vw;
-		flex-direction: column;
+		max-width: 40%;
+		font-size: 2.5vw;
 	}
 }
 
