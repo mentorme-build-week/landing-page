@@ -11,7 +11,7 @@ html {
 }
 
 .site-container {
-	width: 80%;
+	width: 90%;
 	.centered();
 	min-height: 100%;
 	position: relative;
@@ -25,10 +25,15 @@ html {
 	}
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	background-color: #5ab9ea;
 	color: white;
 }
+
 
 h1 {
 	.montserrat();
@@ -50,12 +55,26 @@ h1 {
 }
 
 h2 {
-	font-size: /*1.7rem,*/ 1.6vw;
+	font-size: 1.6vw;
 	font-weight: bold;
 	margin-bottom: 1rem;
 	color: white;
 	.montserrat();
-	
+
+	@media @tablet {
+		font-size: 3vw;
+		width: 100%;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+
+	@media @mobile {
+		font-size: 3vw;
+		width: 100%;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+
 }
 
 .logo-img {
@@ -68,18 +87,20 @@ h2 {
 .header-elements {
 	.flex();
 	flex-direction: column;
-	.centered();
 	margin-top: 2rem;
 	width: 100%;
 
 	@media @tablet {
 		width: 100%;
 		flex-direction: column;
+		.centered();
 	}
 
 	@media @mobile {
 		max-width: 100%;
 		flex-direction: column;
+		.centered();
+
 	}
 }
 
@@ -107,6 +128,7 @@ h2 {
 	margin-bottom: 4rem;
 	// margin: 30px 0px;
 	width: 80%;
+
 	// border: 1px solid white; Border added to debug design.
 	@media @tablet {
 		width: 100%;
@@ -126,17 +148,19 @@ h2 {
 	.flex();
 	flex-direction: column;
 	width: 30%;
-	line-height: 2.0rem;
+	line-height: 2rem;
 
 	@media @tablet {
 		max-width: 100%;
-		font-size: 2.5vw;
+		font-size: 2vw;
+		line-height: 4rem;
 		flex-direction: column;
 	}
 
 	@media @mobile {
 		max-width: 100%;
-		font-size: 2.5vw;
+		font-size: 2vw;
+		line-height: 4rem;
 		flex-direction: column;
 	}
 }
@@ -145,11 +169,11 @@ h2 {
 	width: 35%;
 
 	@media @tablet {
-		max-width: 100%;
+		width: 50%;
 	}
 
 	@media @mobile {
-		max-width: 100%;
+		width: 50%;
 	}
 }
 
@@ -159,17 +183,20 @@ h2 {
 	.flex();
 	.centered();
 	width: 80%;
-	margin-top: 8rem;
+	margin-top: 4rem;
 	margin-bottom: 4rem;
 	margin-top: 1rem;
 
 	// border: 1px solid red; Border added to debug design.
 	@media @tablet {
+		flex-direction: column-reverse;
+		max-width: 100%;
 
 	}
 
 	@media @mobile {
-
+		flex-direction: column-reverse;
+		max-width: 100%;
 	}
 }
 
@@ -179,11 +206,19 @@ h2 {
 	.flex();
 	flex-direction: column;
 	width: 30%;
-	line-height: 2.0rem;
+	line-height: 2rem;
 
-	@media @tablet {}
+	@media @tablet {
+		font-size: 2vw;
+		line-height: 4rem;
 
-	@media @mobile {}
+	}
+
+	@media @mobile {
+		font-size: 2vw;
+		line-height: 4rem;
+
+	}
 }
 
 .middle-img {
@@ -191,27 +226,12 @@ h2 {
 	width: 35%;
 
 	@media @tablet {
-
+		width: 50%;
 	}
 
 	@media @mobile {
-
+		width: 50%;
 	}
-}
-
-.bottom-content {
-	.flex();
-	flex-direction: column;
-
-	button {
-		.flex();
-		.centered();
-		width: 10%;
-	}
-
-	@media @tablet {}
-
-	@media @mobile {}
 }
 
 //styles for the bottom of the page
@@ -219,19 +239,32 @@ h2 {
 .bottom-content {
 	.flex();
 	flex-direction: column;
-	margin: 6rem;
+	margin: 7rem;
 
 	button {
 		.centered();
 		width: 15%;
-		height: 2.7rem;
+		height: 5rem;
 		margin-top: 3rem;
 		border: .15rem solid white;
 		border-radius: .5rem;
 		.montserrat();
 		background-color: #5ab9ea;
 		color: white;
-		font-size: .9rem;
+		// font-size: .9rem;
+		font-size: 1.2vw;
+
+		@media @tablet {
+			width: 20vw;
+			height: 8vh;
+			font-size: 2vw;
+		}
+
+		@media @mobile {
+			width: 20vw;
+			height: 8vh;
+			font-size: 2vw;
+		}
 	}
 
 	button:hover {
@@ -239,22 +272,19 @@ h2 {
 		color: white;
 		.grow();
 	}
-
-	@media @tablet {}
-
-	@media @mobile {}
 }
 
 footer {
 	.flex();
 	.centered();
 	position: absolute;
-	font-size: .85rem;
-	margin: 0 auto;
+	font-size: .85vw;
 	margin-top: 2rem;
 	width: 100%;
 
-	@media @tablet {}
+	@media @tablet {
+		font-size: 1vw;
+	}
 
 	@media @mobile {}
 }
@@ -269,6 +299,6 @@ footer {
 	// margin-bottom: 1rem;
 }
 
-li:last-child{
+li:last-child {
 	margin-bottom: .5rem;
 }
