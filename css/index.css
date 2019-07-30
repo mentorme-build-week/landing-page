@@ -481,6 +481,7 @@ h2 {
 }
 .navigation a {
   text-decoration: none;
+  padding: 2.1rem;
   padding-bottom: 4rem;
   height: 3rem;
   margin: 0 auto;
