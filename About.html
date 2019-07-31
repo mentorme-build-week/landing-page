@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
   <title>Who we are</title>
@@ -26,8 +28,70 @@
         </nav>
       </div>
     </header>
+    <!-- Team member card styling using bootstrap -->
 
-    <div class="team-members">
+    <section class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 mt-5 mb-5">
+          <div class="card">
+            <img src="Images/tanksley-developer.jpeg" class="card-img-top" alt="Picture of Stephen Tanksley">
+            <div class="card-body">
+              <h5 class="card-title text-dark font-weight-bold">Stephen Tanksley <br> Web UI Developer</h5>
+              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of
+                the card's
+                content.</p>
+              <a href="https://github.com/StephenTanksley" class="btn btn-primary mt-2">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mb-5">
+          <div class="card">
+            <img src="Images/Anthony Vigliotta.jpg" class="card-img-top" alt="Picture of Stephen Tanksley">
+            <div class="card-body">
+              <h5 class="card-title text-dark font-weight-bold">Stephen Tanksley <br> Front End Developer</h5>
+              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of
+                the card's
+                content.</p>
+              <a href="https://github.com/anthonyvigz" class="btn btn-primary mt-2">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mb-5">
+          <div class="card">
+            <img src="Images/Jamison Blackwell.jpg" class="card-img-top" alt="Picture of Jamison Blackwell">
+            <div class="card-body">
+              <h5 class="card-title text-dark font-weight-bold">Jamison Blackwell <br> Front End Developer</h5>
+              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of
+                the card's
+                content.</p>
+              <a href="https://github.com/jblack186" class="btn btn-primary mt-2">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5">
+          <div class="card">
+            <img src="Images/Jerome-Haynes.jpg" class="card-img-top" alt="Picture of Jerome Haynes">
+            <div class="card-body">
+              <h5 class="card-title text-dark font-weight-bold">Jerome Haynes <br> Web UI Developer</h5>
+              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of
+                the card's
+                content.</p>
+              <a href="https://github.com/RomeNineO" class="btn btn-primary mt-2 align align-items-center">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+
+    <!-- <div class="team-members">
 
       <h1>Team Members</h1>
       
@@ -40,28 +104,38 @@
 
         <img src="Images/tanksley-developer.jpeg" class="headshot" href="https://github.com/StephenTanksley" alt="Stephen Tanksley">
 
-    </div>
+    </div> -->
 
     <footer>
-        <ul>
-            <li>
-                <p>MentorMe © 2019 </p>
-            </li>
-            <br />
-            <li>
-                <a href="About.html" alt="About Us">About Us</a>
-            </li>
-            <br />
-            <li>
-                <div class="icon-attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik"
-                        title="Freepik">Freepik</a>
-                    from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
-                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                        target="_blank">CC 3.0 BY</a></div>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <p>MentorMe © 2019 </p>
+        </li>
+        <br />
+        <br />
+        <li>
+          <div class="icon-attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+              title="Freepik">Freepik</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+              href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+              3.0
+              BY</a></div>
+        </li>
+      </ul>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
   </div>
+
+
 </body>
 
 </html>
