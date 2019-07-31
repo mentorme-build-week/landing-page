@@ -3,7 +3,7 @@
 html {
 	font-size: 62.5%;
 	.roboto();
-	font-size: 1vw;
+	font-size: .9rem;
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
@@ -33,7 +33,6 @@ body {
 	color: white;
 }
 
-
 h1 {
 	.montserrat();
 	font-size: 3vw;
@@ -50,30 +49,14 @@ h1 {
 		width: 100%;
 		margin-bottom: 2rem;
 	}
-
 }
 
 h2 {
-	font-size: 2vw;
+	font-size: 1.5rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
 	color: white;
 	.montserrat();
-
-	@media @tablet {
-		font-size: 3.7vw;
-		width: 100%;
-		margin-top: 3rem;
-		margin-bottom: 3rem;
-	}
-
-	@media @mobile {
-		font-size: 3.7vw;
-		width: 100%;
-		margin-top: 3rem;
-		margin-bottom: 3rem;
-	}
-
 }
 
 .logo-img {
@@ -154,7 +137,11 @@ h2 {
 	flex-direction: column;
 	width: 30%;
 	line-height: 2rem;
-	font-size: 1.2vw;
+	// font-size: 1.2vw;
+
+	p {
+		font-size: 1.3rem;
+	}
 
 	@media @tablet {
 		max-width: 100%;
@@ -166,8 +153,8 @@ h2 {
 
 	@media @mobile {
 		max-width: 100%;
-		font-size: 2.5rem;
-		line-height: 4rem;
+		font-size: 1.5rem;
+		line-height: 2.5rem;
 		padding-bottom: 4rem;
 		border-bottom: .2rem dotted white;
 	}
@@ -197,43 +184,34 @@ h2 {
 
 	// border: 1px solid red; Border added to debug design.
 	@media @tablet {
-		flex-direction: column-reverse;
-		width: 100%;
 	}
 
 	@media @mobile {
-		flex-direction: column-reverse;
-		width: 100%;
 	}
 }
 
 .middle-copy {
-
 	.centered();
 	.flex();
 	flex-direction: column;
 	width: 30%;
-	line-height: 2rem;
-	font-size: 1.2vw;
-
+	line-height: 2.0rem;
 
 	@media @tablet {
-		// font-size: 2vw;
-		font-size: 2.5rem;
-		line-height: 4rem;
-		padding-bottom: 4rem;
-		border-bottom: .2rem dotted white;
-
 	}
 
 	@media @mobile {
-		// font-size: 2vw;
-		font-size: 2.5rem;
+	}
+}
 
-		line-height: 4rem;
-		padding-bottom: 4rem;
-		border-bottom: .2rem dotted white;
+.middle-img {
+	.flex();
+	width: 35%;
 
+	@media @tablet {
+	}
+
+	@media @mobile {
 	}
 }
 
@@ -245,8 +223,10 @@ h2 {
 		width: 50%;
 	}
 
+	@media @tablet {
+	}
+
 	@media @mobile {
-		width: 50%;
 	}
 }
 
@@ -288,4 +268,46 @@ h2 {
 		color: white;
 		.grow();
 	}
+
+	@media @tablet {
+	}
+
+	@media @mobile {
+	}
 }
+
+footer {
+	.flex();
+	.centered();
+	position: absolute;
+	font-size: .85rem;
+	margin: 0 auto;
+	margin-top: 2rem;
+	width: 100%;
+
+	p {
+		font-size: 1rem;
+	}
+
+	@media @tablet {
+	}
+
+	@media @mobile {
+	}
+}
+
+.footer-container {
+	.flex();
+	.centered();
+}
+
+.icon-attribution {
+	font-size: .6rem;
+	// margin-bottom: 1rem;
+}
+
+li:last-child {
+	margin-bottom: .5rem;
+}
+
+// About Us styling
