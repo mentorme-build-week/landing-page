@@ -424,6 +424,11 @@ footer {
 footer p {
   font-size: 1rem;
 }
+@media (max-width: 500px) {
+  footer .icon-attribution {
+    font-size: 0.9rem;
+  }
+}
 .footer-container {
   display: flex;
   margin: 0 auto;
