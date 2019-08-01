@@ -1,14 +1,6 @@
-const nav = document.querySelector('navigation')
-const topOfNav = nav.offsetTop;
+//Creating a sticky nav bar that will stay up at the top of the document when scrolling.
 
-function fixNav() {
-  if (window.scrollY >= topOfNav) {
-    document.body.style.paddingTop = nav.offsetHeight + 'px';
-    document.body.classList.add('fixed-nav');
-  } else {
-    document.body.style.paddingTop = 0;
-    document.body.classList.remove('fixed-nav');
-  }
-}
 
-window.addEventListener('scroll', fixNav);
+
+//Creating a contact form for people to ask questions.
+

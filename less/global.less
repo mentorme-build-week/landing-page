@@ -3,7 +3,7 @@
 html {
 	font-size: 62.5%;
 	.roboto();
-	font-size: .9rem;
+	font-size: 1rem;
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
@@ -14,6 +14,7 @@ html {
 	.centered();
 	min-height: 100%;
 	position: relative;
+	color: white;
 
 	@media @tablet {
 		width: 100%;
@@ -25,35 +26,37 @@ html {
 }
 
 body {
-	background-color: #5ab9ea;
-	color: white;
+	background: #5AB9EA;
 }
+
+
 
 h1 {
 	.montserrat();
-	font-size: 3vw;
+	font-size: 4rem;
 	margin-left: 1rem;
 
 	@media @tablet {
-		font-size: 4vw;
+		font-size: 2.5rem;
 		width: 100%;
 		margin-bottom: 2rem;
 	}
 
 	@media @mobile {
-		font-size: 4vw;
+		font-size: 2.5rem;
 		width: 100%;
 		margin-bottom: 2rem;
 	}
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
 	color: white;
 	.montserrat();
 }
+
 
 .logo-img {
 	.flex();
@@ -72,12 +75,15 @@ h2 {
 	}
 }
 
+
 .header-elements {
 	.flex();
 	.centered();
+	// position: fixed;
+	// overflow: hidden;
 	flex-direction: column;
 	margin-top: 2rem;
-	width: 100%;
+	width: 80%;
 
 	@media @tablet {
 		width: 100%;
@@ -101,7 +107,7 @@ h2 {
 	}
 
 	@media @mobile {
-		max-width: 100%;
+		width: 100%;
 		flex-direction: column;
 	}
 }
@@ -112,17 +118,18 @@ h2 {
 	.centered();
 	margin-top: 4rem;
 	margin-bottom: 4rem;
-	// margin: 30px 0px;
 	width: 80%;
 
-	// border: 1px solid white; Border added to debug design.
 	@media @tablet {
-		width: 100%;
-		flex-direction: column;
+		width: 70%;
+		// flex-direction: column;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		border-bottom: .2rem dotted white;
 	}
 
 	@media @mobile {
-		max-width: 100%;
+		width: 80%;
 		flex-direction: column;
 	}
 }
@@ -135,23 +142,21 @@ h2 {
 	line-height: 2rem;
 
 	p {
-		font-size: 1.3rem;
+		font-size: 1.15rem;
 	}
 
 	@media @tablet {
-		max-width: 100%;
-		font-size: 2.5rem;
-		line-height: 4rem;
-		padding-bottom: 4rem;
-		border-bottom: .2rem dotted white;
+		width: 60%;
+		font-size: 2rem;
+		line-height: 2rem;
+		padding-bottom: 2rem;
 	}
 
 	@media @mobile {
-		max-width: 100%;
-		font-size: 1.5rem;
-		line-height: 2.5rem;
-		padding-bottom: 4rem;
-		border-bottom: .2rem dotted white;
+		max-width: 60%;
+		font-size: 1rem;
+		line-height: 2rem;
+		padding-bottom: 2rem;
 	}
 }
 
@@ -160,10 +165,15 @@ h2 {
 
 	@media @tablet {
 		width: 50%;
+		margin-bottom: 1rem;
+		margin-top: 1.5rem;
+
 	}
 
 	@media @mobile {
 		width: 50%;
+		margin-bottom: 1rem;
+		margin-top: 1.5rem;
 	}
 }
 
@@ -172,17 +182,38 @@ h2 {
 .mid-content {
 	.flex();
 	.centered();
-	width: 80%;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
-	margin-top: 1rem;
+	width: 80%;
 
-	// border: 1px solid red; Border added to debug design.
+
 	@media @tablet {
+		width: 70%;
+		// flex-direction: column;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		border-bottom: .2rem dotted white;
 	}
 
 	@media @mobile {
+		width: 80%;
+		flex-direction: column-reverse;
 	}
+	// border: 1px solid red; Border added to debug design.
+	// @media @tablet {
+	// 	width: 60%;
+	// 	font-size: 2rem;
+	// 	line-height: 2rem;
+	// 	padding-bottom: 2rem;
+	// }
+
+	// @media @mobile {
+	// 	max-width: 60%;
+	// 	font-size: 1rem;
+	// 	line-height: 2rem;
+	// 	padding-bottom: 2rem;
+	// 	flex-direction: column;
+	// }
 }
 
 .middle-copy {
@@ -192,36 +223,39 @@ h2 {
 	width: 30%;
 	line-height: 2.0rem;
 
+	p {
+		font-size: 1.15rem;
+	}
+
 	@media @tablet {
+		width: 60%;
+		font-size: 2rem;
+		line-height: 2rem;
+		padding-bottom: 2rem;
 	}
 
 	@media @mobile {
+		max-width: 60%;
+		font-size: 1rem;
+		line-height: 2rem;
+		padding-bottom: 2rem;
 	}
 }
+
 
 .middle-img {
 	.flex();
 	width: 35%;
-
-	@media @tablet {
-	}
-
-	@media @mobile {
-	}
-}
-
-.middle-img {
-	.flex();
-	width: 35%;
+	padding-left: 1rem;
 
 	@media @tablet {
 		width: 50%;
-	}
-
-	@media @tablet {
+		margin-bottom: 2rem;
 	}
 
 	@media @mobile {
+		width: 50%;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -242,32 +276,35 @@ h2 {
 		.montserrat();
 		background-color: #5ab9ea;
 		color: white;
-		font-size: 1.2vw;
+		// font-size: .9rem;
+		font-size: 1rem;
+
 
 		@media @tablet {
 			width: 20vw;
 			height: 8vh;
-			font-size: 2vw;
+			font-size: 1rem;
 		}
 
 		@media @mobile {
 			width: 20vw;
 			height: 8vh;
-			font-size: 2vw;
+			font-size: 1rem;
 		}
+
 	}
 
 	button:hover {
-		background-color: rgba(23, 190, 187, 0.856);
 		color: white;
 		.grow();
+		.colorful();
+		color: white;
+
 	}
 
-	@media @tablet {
-	}
+	@media @tablet {}
 
-	@media @mobile {
-	}
+	@media @mobile {}
 }
 
 footer {
@@ -284,8 +321,7 @@ footer {
 		margin-top: 3rem;
 	}
 
-	@media @tablet {
-	}
+	@media @tablet {}
 
 	@media @mobile {
 		.icon-attribution {
@@ -306,3 +342,4 @@ footer {
 li:last-child {
 	margin-bottom: .5rem;
 }
+

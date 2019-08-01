@@ -8,9 +8,9 @@
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-
     <script src="myscripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
 
@@ -19,7 +19,7 @@
 <body>
     <div class="site-container">
         <header>
-            <div class="header-elements">
+            <div class="header-elements sticky">
                 <!-- logo -->
                 <div class="branding-container">
                     <img src="Images/network.svg" class="logo-img">
@@ -31,6 +31,7 @@
                     <a href="#what">What We Do</a>
                     <a href="#how">How We Do It</a>
                     <a href="#start">Get Started</a>
+                    <a href="#sign-in">Sign In</a>
                 </nav>
             </div>
         </header>
@@ -49,10 +50,8 @@
             <!--we talk more here about how great we are-->
             <div class="middle-copy">
                 <h2 id="how">How We Do It</h2>
-                <p>MentorMe's network allows young professionals to be paired with mentors in their field of expertise
-                    who can guide them in their career choices. Our partners include designers, web developers,
-                    financial
-                    services professionals, marketers - you name it! The answers are there; all you have to do is ask.
+                <p>Our partners include designers, web developers, financial services professionals, marketers - you name
+                    it! The answers are there; all you have to do is ask.
                 </p>
             </div>
             <img src="Images/undraw_experts3_3njd.svg" class="middle-img" alt="something about how we're awesome.">
@@ -62,6 +61,7 @@
             <!--something in here for the sign-up/sign-in form-->
             <h2 id="start">Get Started Today</h2>
             <button>Ready to get started?</button>
+
             <!-- <p>This is meant for Anthony and Jamison to be doing the React form in.</p> -->
         </section>
 
@@ -85,11 +85,26 @@
             </ul>
         </footer>
     </div>
+
+    <script>
+        const nav = document.querySelector('sticky')
+        let topOfNav = nav.offsetTop;
+
+
+        function fixNav() {
+            // console.log(scrollY, nav.offsetHeight)
+       
+            if (window.scrollY >= topOfNav) {
+                document.body.style.paddingTop = nav.offsetHeight + 'px';
+                document.body.classList.add('fixed-nav');
+            } else {
+                document.body.style.paddingTop = 0;
+                document.body.classList.remove('fixed-nav');
+            }
+        }
+
+        window.addEventListener('scroll', fixNav);
+    </script>
 </body>
-
-
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 
 </html>
