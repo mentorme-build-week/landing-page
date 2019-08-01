@@ -184,9 +184,6 @@ html {
     width: 100%;
   }
 }
-a {
-  text-decoration: none;
-}
 body {
   background: #5AB9EA;
 }
@@ -474,6 +471,7 @@ footer {
 }
 footer p {
   font-size: 1rem;
+  margin-top: 3rem;
 }
 @media (max-width: 500px) {
   footer .icon-attribution {
