@@ -5,25 +5,25 @@ footer {
 	.flex();
 	.centered();
 	position: absolute;
-	font-size: .85vw;
+	font-size: .7vw;
 	margin-top: 2rem;
 	width: 100%;
+	
 
 	@media @tablet {
-		font-size: 2vw;
+		width: 100%
 	}
 
 	@media @mobile {
-        font-size: 2vw;
-
+		width: 100%;
 	}
-	
+
 	a {
 		text-decoration: none;
 		color: white;
 		font-size: .9rem;
 	}
-	
+
 }
 
 .footer-container {
@@ -33,19 +33,23 @@ footer {
 
 .icon-attribution {
 	font-size: .9rem;
-    margin-bottom: 1rem;
-    
-    @media @tablet {
+	margin-bottom: 1rem;
+
+	@media @tablet {
 		font-size: 1.7vw;
+		padding: .5rem;
 	}
 
 	@media @mobile {
-        font-size: 1.7vw;
+		font-size: 1.7vw;
+		padding: .5rem;
 
-    }
+	}
 }
 
 
 li:last-child {
-    margin-bottom: .7rem;
+	margin-bottom: .7rem;
+	padding: .5rem;
+
 }

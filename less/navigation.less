@@ -24,22 +24,24 @@
 .navigation a {
 	color: white;
 	text-decoration: none;
-	padding: 2rem;
+	padding: 2.5rem;
+	padding-top: 1rem;
 	// padding-bottom: 3rem;
 	height: 2rem;
 	.centered();
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	margin-bottom: 1rem;
 	color: white;
 	.montserrat();
 
 	@media @tablet {
-		width: 60%;
+		width: 45%;
 		border-bottom: .2rem dotted white;
 	}
 
 	@media @mobile {
-		width: 60%;
+		width: 45%;
+		font-size: 1rem;
 	}
 }
 
@@ -47,3 +49,9 @@
 	cursor: pointer;
 	.grow();
 }
+
+
+.fixed-nav nav {
+	position: fixed;
+	box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  }
