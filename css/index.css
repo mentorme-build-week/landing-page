@@ -21,6 +21,13 @@
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
+.colorful {
+  background: #46667d;
+  background: -moz-linear-gradient(108deg, #46667d 0%, #52a2b9 32%, rgba(0, 212, 255, 0.90963351) 63%);
+  background: -webkit-linear-gradient(108deg, #46667d 0%, #52a2b9 32%, rgba(0, 212, 255, 0.90963351) 63%);
+  background: linear-gradient(108deg, #46667d 0%, #52a2b9 32%, rgba(0, 212, 255, 0.90963351) 63%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#46667d", endColorstr="#00d4ff", GradientType=1);
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -152,7 +159,7 @@ table {
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -165,6 +172,7 @@ html {
   text-align: center;
   min-height: 100%;
   position: relative;
+  color: white;
 }
 @media (max-width: 800px) {
   .site-container {
@@ -180,30 +188,29 @@ a {
   text-decoration: none;
 }
 body {
-  background-color: #5ab9ea;
-  color: white;
+  background: #5AB9EA;
 }
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3vw;
+  font-size: 4rem;
   margin-left: 1rem;
 }
 @media (max-width: 800px) {
   h1 {
-    font-size: 4vw;
+    font-size: 2.5rem;
     width: 100%;
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 4vw;
+    font-size: 2.5rem;
     width: 100%;
     margin-bottom: 2rem;
   }
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
@@ -235,7 +242,7 @@ h2 {
   text-align: center;
   flex-direction: column;
   margin-top: 2rem;
-  width: 100%;
+  width: 80%;
 }
 @media (max-width: 800px) {
   .header-elements {
@@ -265,7 +272,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .branding-container {
-    max-width: 100%;
+    width: 100%;
     flex-direction: column;
   }
 }
@@ -281,13 +288,15 @@ h2 {
 }
 @media (max-width: 800px) {
   .top-section {
-    width: 100%;
-    flex-direction: column;
+    width: 70%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 0.2rem dotted white;
   }
 }
 @media (max-width: 500px) {
   .top-section {
-    max-width: 100%;
+    width: 80%;
     flex-direction: column;
   }
 }
@@ -302,24 +311,22 @@ h2 {
   line-height: 2rem;
 }
 .top-content p {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
 }
 @media (max-width: 800px) {
   .top-content {
-    max-width: 100%;
-    font-size: 2.5rem;
-    line-height: 4rem;
-    padding-bottom: 4rem;
-    border-bottom: 0.2rem dotted white;
+    width: 60%;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
   }
 }
 @media (max-width: 500px) {
   .top-content {
-    max-width: 100%;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    padding-bottom: 4rem;
-    border-bottom: 0.2rem dotted white;
+    max-width: 60%;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
   }
 }
 .top-img {
@@ -328,11 +335,15 @@ h2 {
 @media (max-width: 800px) {
   .top-img {
     width: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
   }
 }
 @media (max-width: 500px) {
   .top-img {
     width: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
   }
 }
 .mid-content {
@@ -341,10 +352,23 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 80%;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  margin-top: 1rem;
+  width: 80%;
+}
+@media (max-width: 800px) {
+  .mid-content {
+    width: 70%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 0.2rem dotted white;
+  }
+}
+@media (max-width: 500px) {
+  .mid-content {
+    width: 80%;
+    flex-direction: column-reverse;
+  }
 }
 .middle-copy {
   margin: 0 auto;
@@ -356,17 +380,40 @@ h2 {
   width: 30%;
   line-height: 2rem;
 }
-.middle-img {
-  display: flex;
-  width: 35%;
+.middle-copy p {
+  font-size: 1.15rem;
+}
+@media (max-width: 800px) {
+  .middle-copy {
+    width: 60%;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .middle-copy {
+    max-width: 60%;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 .middle-img {
   display: flex;
   width: 35%;
+  padding-left: 1rem;
 }
 @media (max-width: 800px) {
   .middle-img {
     width: 50%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .middle-img {
+    width: 50%;
+    margin-bottom: 2rem;
   }
 }
 .bottom-content {
@@ -387,28 +434,32 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   background-color: #5ab9ea;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 @media (max-width: 800px) {
   .bottom-content button {
     width: 20vw;
     height: 8vh;
-    font-size: 2vw;
+    font-size: 1rem;
   }
 }
 @media (max-width: 500px) {
   .bottom-content button {
     width: 20vw;
     height: 8vh;
-    font-size: 2vw;
+    font-size: 1rem;
   }
 }
 .bottom-content button:hover {
-  background-color: rgba(23, 190, 187, 0.856);
-  color: white;
   transform: scale(1.1);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
+  background: #46667d;
+  background: -moz-linear-gradient(108deg, #46667d 0%, #52a2b9 32%, rgba(0, 212, 255, 0.90963351) 63%);
+  background: -webkit-linear-gradient(108deg, #46667d 0%, #52a2b9 32%, rgba(0, 212, 255, 0.90963351) 63%);
+  background: linear-gradient(108deg, #46667d 0%, #52a2b9 32%, rgba(0, 212, 255, 0.90963351) 63%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#46667d", endColorstr="#00d4ff", GradientType=1);
+  color: white;
 }
 footer {
   display: flex;
@@ -444,7 +495,7 @@ li:last-child {
 }
 .navigation {
   display: flex;
-  margin-top: 25px;
+  margin-top: 1rem;
   height: 3rem;
   margin: 0 auto;
   justify-content: center;
@@ -455,43 +506,43 @@ li:last-child {
   .navigation {
     width: 100%;
     flex-direction: column;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
   }
 }
 @media (max-width: 500px) {
   .navigation {
-    max-width: 100%;
+    width: 100%;
     flex-direction: column;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
   }
+}
+sticky {
+  position: fixed;
 }
 .navigation a {
   text-decoration: none;
-  padding: 2.1rem;
-  padding-bottom: 4rem;
-  height: 3rem;
+  padding: 2rem;
+  height: 2rem;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.4vw;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 800px) {
   .navigation a {
-    width: 40%;
-    font-size: 2.5vw;
+    width: 60%;
     border-bottom: 0.2rem dotted white;
   }
 }
 @media (max-width: 500px) {
   .navigation a {
-    max-width: 40%;
-    font-size: 2.5vw;
+    width: 60%;
   }
 }
 .navigation a:hover {
@@ -520,6 +571,11 @@ footer {
   footer {
     font-size: 2vw;
   }
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
 }
 .footer-container {
   display: flex;
