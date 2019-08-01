@@ -19,7 +19,7 @@
 <body>
     <div class="site-container">
         <header>
-            <div class="header-elements sticky">
+            <div id="header-elements">
                 <!-- logo -->
                 <div class="branding-container">
                     <img src="Images/network.svg" class="logo-img">
@@ -50,7 +50,8 @@
             <!--we talk more here about how great we are-->
             <div class="middle-copy">
                 <h2 id="how">How We Do It</h2>
-                <p>Our partners include designers, web developers, financial services professionals, marketers - you name
+                <p>Our partners include designers, web developers, financial services professionals, marketers - you
+                    name
                     it! The answers are there; all you have to do is ask.
                 </p>
             </div>
@@ -87,23 +88,19 @@
     </div>
 
     <script>
-        const nav = document.querySelector('sticky')
+        const nav = document.getElementById('headerElements');
         let topOfNav = nav.offsetTop;
-
-
-        function fixNav() {
-            // console.log(scrollY, nav.offsetHeight)
-       
-            if (window.scrollY >= topOfNav) {
-                document.body.style.paddingTop = nav.offsetHeight + 'px';
-                document.body.classList.add('fixed-nav');
-            } else {
-                document.body.style.paddingTop = 0;
-                document.body.classList.remove('fixed-nav');
-            }
-        }
-
-        window.addEventListener('scroll', fixNav);
+        
+        // function fixNav() {
+        //     if (window.scrollY >= topOfNav) {
+        //         document.body.style.paddingTop = nav.offsetHeight + 'px';
+        //         document.body.classList.add('fixed-nav');
+        //     } else {
+        //         document.body.style.paddingTop = 0;
+        //         document.body.classList.remove('fixed-nav');
+        //     }
+        // }
+        // window.addEventListener('scroll', fixNav);
     </script>
 </body>
 
