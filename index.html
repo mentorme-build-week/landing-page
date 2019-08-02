@@ -12,20 +12,24 @@
     <script src="myscripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
 
+
+
 </head>
 
 <body>
+    <!-- This container holds the whole website. -->
     <div class="site-container">
+
         <header>
-            <div id="header-elements">
+            <div class="header-elements">
                 <!-- logo -->
                 <div class="branding-container">
                     <img src="Images/network.svg" class="logo-img">
                     <h1>MentorMe</h1>
                 </div>
 
-                <!-- nav items -->
-                <nav class="navigation">
+<!-- DON'T DELETE. THIS IS THE CODE THAT WORKS. -->
+                <nav class="navigation" id="#main">
                     <a href="#what">What We Do</a>
                     <a href="#how">How We Do It</a>
                     <a href="#start">Get Started</a>
@@ -84,21 +88,24 @@
             </ul>
         </footer>
     </div>
-
-    <script>
-        const nav = document.getElementById('headerElements');
-        let topOfNav = nav.offsetTop;
-        
-        // function fixNav() {
-        //     if (window.scrollY >= topOfNav) {
-        //         document.body.style.paddingTop = nav.offsetHeight + 'px';
-        //         document.body.classList.add('fixed-nav');
-        //     } else {
-        //         document.body.style.paddingTop = 0;
-        //         document.body.classList.remove('fixed-nav');
-        //     }
-        // }
-        // window.addEventListener('scroll', fixNav);
-    </script>
 </body>
+
+<script>
+
+const navBar = document.getElementById("#main");
+let topOfNav = navBar.offsetTop;
+
+function fixNav() {
+    if (window.scrollY >= topOfNav) {
+        document.body.style.paddingTop = navBar.offsetHeight + 'px';
+        document.body.classList.add('fixed-nav');
+    } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-nav');
+    }
+}
+
+window.addEventListener('scroll', fixNav);
+
+</script>
 </html>
