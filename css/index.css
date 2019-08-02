@@ -213,66 +213,6 @@ h2 {
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
-.logo-img {
-  display: flex;
-  height: 6rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-@media (max-width: 800px) {
-  .logo-img {
-    width: 100%;
-    height: 5rem;
-  }
-}
-@media (max-width: 500px) {
-  .logo-img {
-    width: 100%;
-    height: 5rem;
-  }
-}
-#header-elements {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  margin-top: 2rem;
-  width: 80%;
-}
-@media (max-width: 800px) {
-  #header-elements {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-@media (max-width: 500px) {
-  #header-elements {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-.branding-container {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-@media (max-width: 800px) {
-  .branding-container {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-@media (max-width: 500px) {
-  .branding-container {
-    width: 100%;
-    flex-direction: column;
-  }
-}
 .top-section {
   display: flex;
   margin: 0 auto;
@@ -491,41 +431,114 @@ footer p {
 li:last-child {
   margin-bottom: 0.5rem;
 }
-.navigation {
+.header-elements {
   display: flex;
-  margin-top: 1rem;
-  height: 3rem;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .header-elements {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .header-elements {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.branding-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  transform: scale(0.7);
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 800px) {
+  .branding-container {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .branding-container {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+}
+.logo-img {
+  display: flex;
+  height: 6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 800px) {
+  .logo-img {
+    width: 100%;
+    height: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .logo-img {
+    width: 100%;
+    height: 5rem;
+  }
+}
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  padding-top: 1rem;
+  height: 3rem;
+  z-index: 1;
 }
 @media (max-width: 800px) {
   .navigation {
     width: 100%;
     flex-direction: column;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 500px) {
   .navigation {
     width: 100%;
     flex-direction: column;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
   }
+}
+.fixed-nav .navigation {
+  position: fixed;
+  top: 0;
+  width: 85%;
+  transition-duration: 0.1s;
+  background: #5AB9EA;
 }
 .navigation a {
   text-decoration: none;
-  padding: 2.5rem;
+  padding: 1rem;
   padding-top: 1rem;
   height: 2rem;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -548,10 +561,7 @@ li:last-child {
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
-.fixed-nav nav {
-  position: fixed;
-  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
-}
+/*This is the experimental section. If I get this working, I'll remove the other stuff above this.*/
 footer {
   display: flex;
   margin: 0 auto;
