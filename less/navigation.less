@@ -20,7 +20,7 @@
 .branding-container {
 	.flex();
 	.centered();
-	width: 50%;
+	width: 60%;
 	transform: scale(0.7);
 	margin-bottom: .5rem;
 	// border: 1px solid white;
@@ -28,13 +28,13 @@
 	@media @tablet {
 		width: 100%;
 		flex-direction: column;
-		margin-bottom: .5rem;
+		// margin-bottom: .5rem;
 	}
 
 	@media @mobile {
 		width: 100%;
 		flex-direction: column;
-		margin-bottom: .5rem;
+		// margin-bottom: .5rem;
 	}
 }
 
@@ -60,40 +60,31 @@
 	.centered();
 	width: 90%;
 	padding-top: 1rem;
+	margin-bottom: 1rem;
 	height: 3rem;
 	z-index: 1;
 
 	@media @tablet {
 		width: 100%;
 		flex-direction: column;
-		margin-top: 4rem;
-		margin-bottom: 4rem;
+		margin-top: 2.5rem;
+		margin-bottom: 1rem;
+		// height: 12rem;
 	}
 
 	@media @mobile {
 		width: 100%;
 		flex-direction: column;
-		margin-top: 4rem;
-		margin-bottom: 6rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 }
-
-.fixed-nav .navigation {
-	position: fixed;
-	top: 0;
-	width: 85%;
-	// transition-duration: 0.1s;
-	background: #5AB9EA;
-	
-}
-
 
 
 .navigation a {
 	color: white;
 	text-decoration: none;
-	padding: 1rem;
-	padding-top: 1rem;
+	padding-top: .6rem;
 	height: 2rem;
 	.centered();
 	font-size: 1.2rem;
@@ -104,6 +95,7 @@
 	@media @tablet {
 		width: 45%;
 		border-bottom: .2rem dotted white;
+		padding-bottom: .4rem;
 	}
 
 	@media @mobile {
@@ -117,62 +109,36 @@
 	.grow();
 }
 
-/*This is the experimental section. If I get this working, I'll remove the other stuff above this.*/
 
-// #main {
-// 	.flex();
-// 	.centered();
-// 	width: 90%;
-// 	padding-top: 2rem;
-// 	height: 3rem;
-// 	// border: 1px solid white;
 
-// 	@media @tablet {
-// 		width: 100%;
-// 		flex-direction: column;
-// 		margin-top: 4rem;
-// 		margin-bottom: 4rem;
-// 	}
+//Unused CSS for the JS nav bar. Commented out because it would require additional time to fix the
+//styling for tablet and mobile views and there isn't any more time.
 
-// 	@media @mobile {
-// 		width: 100%;
-// 		flex-direction: column;
-// 		margin-top: 4rem;
-// 		margin-bottom: 6rem;
-// 	}
-// }
-
-// .fixed-nav nav {
+// .fixed-nav .navigation {
 // 	position: fixed;
-// 	width: 90%;
-// }
-
-
-// #main a {
-// 	color: white;
-// 	text-decoration: none;
-// 	padding: 1rem;
-// 	padding-top: 1rem;
-// 	height: 2rem;
-// 	.centered();
-// 	font-size: 1.2rem;
-// 	margin-bottom: 1rem;
-// 	color: white;
-// 	.montserrat();
+// 	top: 0;
+// 	width: 85%;
+// 	overflow: hidden;
+// 	// transition-duration: 0.1s;
+// 	background: #5AB9EA;
 
 // 	@media @tablet {
-// 		width: 45%;
-// 		border-bottom: .2rem dotted white;
+// 		width: 100%;
+// 		background: #5AB9EA;
 // 	}
 
 // 	@media @mobile {
-// 		width: 45%;
-// 		font-size: 1rem;
+// 		width: 100%;
+// 		background: #5AB9EA;
 // 	}
-	
-// 	:hover {
-// 		cursor: pointer;
-// 		.grow();
+
+// 	.branding-container {
+// 		@media @tablet {
+// 			visibility: hidden;
+// 		}
+
+// 		@media @mobile {
+// 			visibility: hidden;
+// 		}
 // 	}
 // }
-

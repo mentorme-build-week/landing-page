@@ -165,7 +165,7 @@ html {
   padding: 0;
 }
 .site-container {
-  width: 90%;
+  width: 65%;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -219,7 +219,8 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 8rem;
+  padding-top: 1rem;
   margin-bottom: 4rem;
   width: 80%;
 }
@@ -459,7 +460,7 @@ li:last-child {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;
+  width: 60%;
   transform: scale(0.7);
   margin-bottom: 0.5rem;
 }
@@ -467,14 +468,12 @@ li:last-child {
   .branding-container {
     width: 100%;
     flex-direction: column;
-    margin-bottom: 0.5rem;
   }
 }
 @media (max-width: 500px) {
   .branding-container {
     width: 100%;
     flex-direction: column;
-    margin-bottom: 0.5rem;
   }
 }
 .logo-img {
@@ -503,6 +502,7 @@ li:last-child {
   text-align: center;
   width: 90%;
   padding-top: 1rem;
+  margin-bottom: 1rem;
   height: 3rem;
   z-index: 1;
 }
@@ -510,29 +510,21 @@ li:last-child {
   .navigation {
     width: 100%;
     flex-direction: column;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 500px) {
   .navigation {
     width: 100%;
     flex-direction: column;
-    margin-top: 4rem;
-    margin-bottom: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
-}
-.fixed-nav .navigation {
-  position: fixed;
-  top: 0;
-  width: 85%;
-  transition-duration: 0.1s;
-  background: #5AB9EA;
 }
 .navigation a {
   text-decoration: none;
-  padding: 1rem;
-  padding-top: 1rem;
+  padding-top: 0.6rem;
   height: 2rem;
   margin: 0 auto;
   justify-content: center;
@@ -547,6 +539,7 @@ li:last-child {
   .navigation a {
     width: 45%;
     border-bottom: 0.2rem dotted white;
+    padding-bottom: 0.4rem;
   }
 }
 @media (max-width: 500px) {
@@ -561,7 +554,6 @@ li:last-child {
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
-/*This is the experimental section. If I get this working, I'll remove the other stuff above this.*/
 footer {
   display: flex;
   margin: 0 auto;
