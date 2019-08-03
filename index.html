@@ -28,7 +28,6 @@
                     <h1>MentorMe</h1>
                 </div>
 
-<!-- DON'T DELETE. THIS IS THE CODE THAT WORKS. -->
                 <nav class="navigation" id="#main">
                     <a href="#what">What We Do</a>
                     <a href="#how">How We Do It</a>
@@ -38,34 +37,32 @@
             </div>
         </header>
 
-        <section class="top-section">
-            <!--we talk about the problem we're solving and why you should be excited for our solution-->
+        <!--we talk about the problem we're solving and why you should be excited for our solution-->
+        <section class="top-section" id="what">
             <img src="Images/undraw_friends_online_klj6.svg" class="top-img" alt="mentors">
             <div class="top-content">
-                <h2 id="what">What we do</h2>
+                <h2>What we do</h2>
                 <p>We pair emerging professionals with seasoned mentors who help direct them on the path to success.
-                    We give you the resources you need to excel in your profession.</p>
+                    We give you the resources you need to excel in your profession.
+                </p>
             </div>
         </section>
 
-        <section class="mid-content">
-            <!--we talk more here about how great we are-->
+        <!--we talk more here about how great we are-->
+        <section class="mid-content" id="how">
             <div class="middle-copy">
-                <h2 id="how">How We Do It</h2>
+                <h2>How We Do It</h2>
                 <p>Our partners include designers, web developers, financial services professionals, marketers - you
-                    name
-                    it! The answers are there; all you have to do is ask.
+                    name it! The answers are there; all you have to do is ask.
                 </p>
             </div>
             <img src="Images/undraw_experts3_3njd.svg" class="middle-img" alt="something about how we're awesome.">
         </section>
 
-        <section class="bottom-content">
-            <!--something in here for the sign-up/sign-in form-->
-            <h2 id="start">Get Started Today</h2>
+        <!--something in here for the sign-up form-->
+        <section class="bottom-content" id="start">
+            <h2>Get Started Today</h2>
             <button>Ready to get started?</button>
-
-            <!-- <p>This is meant for Anthony and Jamison to be doing the React form in.</p> -->
         </section>
 
         <footer>
@@ -89,25 +86,4 @@
         </footer>
     </div>
 </body>
-
-<script>
-
-const navBar = document.getElementById("#main");
-let topOfNav = navBar.offsetTop;
-
-function fixNav() {
-    if (window.scrollY >= topOfNav) {
-        document.body.style.paddingTop = navBar.offsetHeight + 'px';
-        document.body.classList.add('fixed-nav');
-    } else {
-        document.body.style.paddingTop = 0;
-        document.body.classList.remove('fixed-nav');
-    }
-}
-
-window.addEventListener('scroll', fixNav);
-
-//Not sure if I should keep it in or not. Currently it only works in full page view.
-
-</script>
 </html>
