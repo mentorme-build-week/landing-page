@@ -554,6 +554,35 @@ li:last-child {
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
+.fixed-nav .navigation {
+  position: fixed;
+  top: 0;
+  width: 85%;
+  overflow: hidden;
+  background: #5AB9EA;
+}
+@media (max-width: 800px) {
+  .fixed-nav .navigation {
+    width: 100%;
+    background: #5AB9EA;
+  }
+}
+@media (max-width: 500px) {
+  .fixed-nav .navigation {
+    width: 100%;
+    background: #5AB9EA;
+  }
+}
+@media (max-width: 800px) {
+  .fixed-nav .navigation .branding-container {
+    visibility: hidden;
+  }
+}
+@media (max-width: 500px) {
+  .fixed-nav .navigation .branding-container {
+    visibility: hidden;
+  }
+}
 footer {
   display: flex;
   margin: 0 auto;
